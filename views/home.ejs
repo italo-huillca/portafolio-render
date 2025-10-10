@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <%= title %>
+    </title>
+    
+    <link rel="stylesheet" href="/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+</head>
+
+<body class="min-h-dvh bg-gradient-to-b to-black via-gray-800 from-slate-600">
+    <nav
+        class="w-full flex items-center justify-between flex-wrap bg-gradient-to-l to-black via-gray-900 from-black py-4 lg:px-12 shadow">
+        <div
+            class="flex justify-between lg:w-auto w-full lg:border-b-0 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
+            <div class="flex items-center flex-shrink-0 text-gray-800 justify-center">
+                <span class="font-semibold text-xl tracking-tight">
+                    <img src="/logo-removebg-preview.png" alt="Logo de la empresa" class="h-12 w-12 mr-2 inline">
+                </span>
+            </div>
+            <div class="block lg:hidden ">
+                <button id="nav" class="flex items-center px-3 py-2 border-2 rounded text-white border-white hover:text-blue-500">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8 justify-center">
+            <div class="text-md font-bold text-white lg:flex-grow">
+                <a href="/"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 px-4 py-2 rounded transition-all ">
+                    Inicio
+                </a>
+                <a href="/about"
+                    class=" block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 px-4 py-2 rounded mr-2">
+                    Acerca de
+                </a>
+                <a href="/proyectos"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 px-4 py-2 rounded  mr-2">
+                    Proyectos
+                </a>
+                <a href="/contact"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 px-4 py-2 rounded mr-2">
+                    Contacto
+                </a>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+    <div class="max-w-xl mx-auto">
+    <header class="flex flex-col justify-center items-center">
+        <img src="/italo-foto.webp" alt="Italo tratando de sonreir" title="Imagen de italo"
+            class="mask-radial-from-45% mask-radial-at-center mask-radial-to-90% object-cover" />
+        <header class="flex flex-col justify-center items-center">
+            <span
+                class="flex items-center justify-center font-mono text-blue-500 cursor-crosshair text-xl rounded-full border border-blue-500 p-1.5 -m-3 bg-black z-10">@italo-huillca
+                <svg height="28" width="28" fill="currentcolor" class="ml-1">
+                    <use href="/sprite.svg#verified" />
+                </svg>
+            </span>
+            <span class="pt-3 text-white text-3xl font-extrabold leading-tight flex py-2 mt-2">
+                Italo Huillca
+            </span>
+        </header>
+    </header>
+    <section class="flex gap-2 justify-center items-center">
+        <a href="https://github.com/italo-huillca" target="_blank" title="X" aria-label="Ir a X"
+            class="rounded-full border border-black bg-slate-900 flex items-center justify-center size-12 xs:size-14  hover:scale-105 transition-all hover:bg-slate-800">
+            <svg width="28" height="28">
+                <use href="/sprite.svg#github" />
+            </svg>
+        </a>
+        <a href="https://x.com/Italohuillca" target="_blank" title="X" aria-label="Ir a X"
+            class="rounded-full border border-black bg-black flex items-center justify-center size-10 xs:size-14 hover:scale-105 transition-all hover:bg-gray-800">
+            <svg width="28" height="28">
+                <use href="/sprite.svg#x" />
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/italo.huillca/" target="_blank" title="Instagram" aria-label="Ir a Instagram"
+            class="rounded-full border flex items-center justify-center size-10 xs:size-14 bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-600 border-purple-700 hover:scale-105 transition-all hover:contrast-125">
+            <svg width="28" height="28">
+                <use href="/sprite.svg#instagram" />
+            </svg>
+        </a>
+        <a href="https://www.youtube.com/@HuillcaItalo" target="_blank" title="Youtube" aria-label="Ir a youtube"
+            class="rounded-full border border-red-500 bg-white flex items-center justify-center size-10 xs:size-14 hover:scale-105 transition-all hover:bg-red-100">
+            <svg width="28" height="28">
+                <use href="/sprite.svg#youtube" />
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/italo-huillca/" target="_blank" title="LinkedIn" aria-label="Ir a linkedin"
+            class="rounded-full border border-blue-500 bg-white flex items-center justify-center size-10 xs:size-14 hover:scale-105 transition-all hover:bg-blue-200">
+            <svg width="28" height="28">
+                <use href="/sprite.svg#linkedin" />
+            </svg>
+        </a>
+    </section>
+    <p class="text-pretty text-center text-sm p-4 text-white">
+        Apasionado por la Ciberseguridad, Inteligencia Artificial y Ciencia de
+        Datos
+    </p>
+    <main>
+        <h2 class=" mt-2 p-2 flex justify-center items-center text-2xl leading-tight font-extrabold text-white">
+            PROYECTOS</h2>
+        <div class="grid grid-cols-1 xs:grid-cols-2  sm:grid-cols-3 sm:grid-rows-2 w-full gap-2 p-2 ">
+            <a href="https://github.com/italo-huillca/Guardian" aria-label="Ir a Proyecto Guardian"
+                title="Guardian Proyecto" target="_blank"
+                class="col-span-2 relative flex flex-col items-start min-h-[180px] bg-gradient-to-tr from-[#7F52FF] via-indigo-600 to-pink-500 rounded-2xl border border-purple-800 overflow-hidden text-white group hover:contrast-125 hover:scale-105 transition-all">
+                <span
+                    class="absolute bottom-0 left-0 p-2 font-extrabold text-3xl text text-shadow-lg/70 z-10">Guardian</span>
+                <svg
+                    class="size-20 absolute bottom-0 -right-4 p-2 -rotate-12 group-hover:-rotate-6 group-hover:scale-110 transition-transform">
+                    <use href="/sprite.svg#Kotlin" />
+                </svg>
+                <svg
+                    class="size-24 absolute -top-1 -right-7 p-2 rotate-12 group-hover:rotate-6 group-hover:scale-110 transition-transform z-1">
+                    <use href="/sprite.svg#Android" />
+                </svg>
+                <svg
+                    class="size-20 absolute top-0 right-12 p-2 rotate-12 group-hover:rotate-6 group-hover:scale-110 transition-transform">
+                    <use href="/sprite.svg#Node-red" />
+                </svg>
+                <svg
+                    class="size-24 absolute bottom-0 right-15 p-2 -rotate-12 group-hover:-rotate-6 group-hover:scale-110 transition-transform contrast-150">
+                    <use href="/sprite.svg#Arduino" />
+                </svg>
+                <span class="absolute top-0 text-xs border mt-2 ml-2 p-1 rounded-xl font-semibold inline-block w-1/2">
+                    App móvil con geolocalización para un dispositivo IoT y
+                    automatización en Node-RED
+                </span>
+            </a>
+
+            <a href="https://github.com/italo-huillca/hypr-dotfiles" aria-label="Ir a mis dotfiles" title="DotFiles"
+                target="_blank"
+                class="relative flex flex-col items-start min-h-[180px] bg-gradient-to-tl from-[#1793D1] via-sky-700 to-slate-900 rounded-2xl border border-blue-800 overflow-hidden text-white group hover:contrast-125 hover:scale-105 transition-all col-span-2 xs:col-span-1 ">
+                <span
+                    class="text-shadow-lg/70 absolute bottom-0 left-0 p-2 font-extrabold text-3xl text z-10">Dotfiles</span>
+                <svg
+                    class="size-32 absolute -bottom-5 -right-9 p-2 -rotate-12 group-hover:-rotate-6 group-hover:scale-110 transition-transform">
+                    <use href="/sprite.svg#Bash" />
+                </svg>
+                <svg
+                    class="size-32 absolute p-2 top-9 -left-7 group-hover:-rotate-6 group-hover:scale-110 transition-transform">
+                    <use href="/sprite.svg#Arch" />
+                </svg>
+                <span
+                    class="absolute top-0 p-1 text-xs border mt-2 ml-2 rounded-xl font-semibold inline-block mr-2 w-1/2 xs:w-3/4  overflow-hidden">
+                    Personalizacion de Arch Linux</span>
+            </a>
+            <a href="https://github.com/italo-huillca/TECalzo" aria-label="Ir al proyecto TECalzo"
+                title="TECalzo Ecommerce" target="_blank"
+                class="col-span-2 xs:col-span-1  relative flex flex-col items-start min-h-[180px] bg-gradient-to-tl from-[#38BDF8] via-cyan-600 to-blue-900 rounded-2xl border border-blue-800 overflow-hidden text-white group hover:contrast-125 hover:scale-105 transition-all">
+                <span
+                    class="text-shadow-lg/70 absolute bottom-0 left-0 p-2 font-extrabold text-3xl text z-10 mt-2">TECalzo</span>
+                <svg
+                    class="size-32 absolute -bottom-5 -right-9 p-2 -rotate-12 group-hover:-rotate-6 group-hover:scale-110 transition-transform">
+                    <use href="/sprite.svg#Laravel" />
+                </svg>
+                <svg
+                    class="size-32 absolute p-2 top-8 -left-2 group-hover:-rotate-6 group-hover:scale-110 transition-transform">
+                    <use href="/sprite.svg#Tailwind" />
+                </svg>
+                <span
+                    class="absolute top-0 p-1 text-xs border mt-2 ml-2 rounded-xl font-semibold inline-block mr-2 w-1/2 xs:w-3/4 overflow-hidden">
+                    Ecommerce en Laravel y Tailwind</span>
+            </a>
+            <a href="#" aria-label="Ir a Proyecto de Python" title="Python" target="_blank"
+                class="col-span-2 relative flex flex-col items-start min-h-[180px] bg-gradient-to-tr from-blue-600 via-green-400 to-yellow-300 rounded-2xl border border-blue-800 overflow-hidden text-white group hover:contrast-125 hover:scale-105 transition-all">
+                <span class="absolute bottom-0 left-0 p-2 font-extrabold text-3xl text text-shadow-lg/70">Python</span>
+                <svg
+                    class="size-36 absolute -bottom-3 -right-3 p-2 -rotate-12 group-hover:-rotate-6 group-hover:scale-110 transition-transform">
+                    <use href="/sprite.svg#python" />
+                </svg>
+                <span class="absolute top-0 p-2 text-xs border mt-2 ml-2 rounded-full font-semibold">
+                    Proyecto (en progreso)</span>
+            </a>
+        </div>
+    </main>
+    </div>
+</body>
+
+</html>

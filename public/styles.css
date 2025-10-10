@@ -1,0 +1,17 @@
+body {
+  margin: 0; /* remove default margin to eliminate white top line */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #0b0b0b; /* darker to blend with nav gradient */
+}
+
+h1 {
+  color: #333;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: blue;
+}

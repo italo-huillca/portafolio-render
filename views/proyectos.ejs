@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</head>
+
+<body class="min-h-dvh bg-gradient-to-b to-black via-gray-800 from-slate-600">
+    <nav
+        class="w-full flex items-center justify-between flex-wrap bg-gradient-to-l to-black via-gray-900 from-black py-4 lg:px-12 shadow">
+        <div
+            class="flex justify-between lg:w-auto w-full lg:border-b-0 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
+            <div class="flex items-center flex-shrink-0 text-gray-800 justify-center">
+                <span class="font-semibold text-xl tracking-tight">
+                    <img src="/logo-removebg-preview.png" alt="Logo de la empresa" class="h-12 w-12 mr-2 inline">
+                </span>
+            </div>
+            <div class="block lg:hidden ">
+                <button id="nav" class="flex items-center px-3 py-2 border-2 rounded text-white border-white hover:text-blue-500">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="menu w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8 justify-center">
+            <div class="text-md font-bold text-white lg:flex-grow">
+                <a href="/"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 px-4 py-2 rounded transition-all ">
+                    Inicio
+                </a>
+                <a href="/about"
+                    class=" block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 px-4 py-2 rounded mr-2">
+                    Acerca de
+                </a>
+                <a href="/proyectos"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 px-4 py-2 rounded  mr-2">
+                    Proyectos
+                </a>
+                <a href="/contact"
+                    class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue-600 px-4 py-2 rounded mr-2">
+                    Contacto
+                </a>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+
+    <div class="max-w-7xl mx-auto p-6">
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+                Mis Proyectos
+            </h1>
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
+                Una colección de proyectos que reflejan mi pasión por la tecnología, desde aplicaciones móviles hasta sistemas IoT y desarrollo web.
+            </p>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </header>
+
+        <!-- Featured Projects -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-white mb-8">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Guardian Project -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:scale-105 transition-all duration-300 group">
+                    <div class="relative h-48 bg-gradient-to-tr from-purple-600 via-indigo-600 to-pink-500 flex items-center justify-center">
+                        <div class="text-6xl text-white opacity-20 group-hover:opacity-30 transition-opacity">🛡️</div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                IoT • Android
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-3">Guardian</h3>
+                        <p class="text-gray-300 mb-4">
+                            Aplicación móvil con geolocalización integrada a un dispositivo IoT para monitoreo y automatización usando Node-RED. Sistema completo de seguridad y control remoto.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">Kotlin</span>
+                            <span class="bg-green-900 text-green-200 px-3 py-1 rounded-full text-sm">Android</span>
+                            <span class="bg-orange-900 text-orange-200 px-3 py-1 rounded-full text-sm">Node-RED</span>
+                            <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm">Arduino</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/italo-huillca/Guardian" target="_blank" 
+                                class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold text-center transition-colors">
+                                Ver en GitHub
+                            </a>
+                            <button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TECalzo Project -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:scale-105 transition-all duration-300 group">
+                    <div class="relative h-48 bg-gradient-to-tl from-cyan-500 via-blue-600 to-blue-900 flex items-center justify-center">
+                        <div class="text-6xl text-white opacity-20 group-hover:opacity-30 transition-opacity">🛒</div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                E-commerce • Web
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-3">TECalzo</h3>
+                        <p class="text-gray-300 mb-4">
+                            Plataforma de e-commerce completa desarrollada con Laravel y Tailwind CSS. Sistema de gestión de productos, carrito de compras y procesamiento de pagos.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-900 text-red-200 px-3 py-1 rounded-full text-sm">Laravel</span>
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">PHP</span>
+                            <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                            <span class="bg-yellow-900 text-yellow-200 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/italo-huillca/TECalzo" target="_blank" 
+                                class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold text-center transition-colors">
+                                Ver en GitHub
+                            </a>
+                            <button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-white mb-8">Otros Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dotfiles Project -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:scale-105 transition-all duration-300">
+                    <div class="relative h-32 bg-gradient-to-tl from-blue-600 via-sky-700 to-slate-900 flex items-center justify-center">
+                        <div class="text-4xl text-white opacity-30">⚙️</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Dotfiles</h3>
+                        <p class="text-gray-300 text-sm mb-3">
+                            Configuración personalizada de Arch Linux con Hyprland. Setup completo para desarrollo.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded text-xs">Bash</span>
+                            <span class="bg-blue-700 text-blue-200 px-2 py-1 rounded text-xs">Arch Linux</span>
+                        </div>
+                        <a href="https://github.com/italo-huillca/hypr-dotfiles" target="_blank" 
+                            class="block bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-center text-sm font-semibold transition-colors">
+                            Ver en GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Python Project -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:scale-105 transition-all duration-300">
+                    <div class="relative h-32 bg-gradient-to-tr from-blue-600 via-green-400 to-yellow-300 flex items-center justify-center">
+                        <div class="text-4xl text-white opacity-30">🐍</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Proyecto Python</h3>
+                        <p class="text-gray-300 text-sm mb-3">
+                            Análisis de datos y machine learning con Python. Proyecto en desarrollo activo.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="bg-blue-700 text-blue-200 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-green-700 text-green-200 px-2 py-1 rounded text-xs">Pandas</span>
+                            <span class="bg-orange-700 text-orange-200 px-2 py-1 rounded text-xs">Scikit-learn</span>
+                        </div>
+                        <button class="w-full bg-gray-700 text-gray-300 px-3 py-2 rounded text-center text-sm font-semibold cursor-not-allowed">
+                            En Desarrollo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Portfolio Web -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 hover:scale-105 transition-all duration-300">
+                    <div class="relative h-32 bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center">
+                        <div class="text-4xl text-white opacity-30">🌐</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-white mb-2">Portfolio Web</h3>
+                        <p class="text-gray-300 text-sm mb-3">
+                            Este mismo sitio web desarrollado con Express.js y Tailwind CSS.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="bg-green-700 text-green-200 px-2 py-1 rounded text-xs">Node.js</span>
+                            <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded text-xs">Express</span>
+                            <span class="bg-cyan-700 text-cyan-200 px-2 py-1 rounded text-xs">Tailwind</span>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-center text-sm font-semibold transition-colors">
+                            Estás aquí
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-white text-center mb-8">Tecnologías que uso</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="bg-gray-900 rounded-xl p-4 text-center border border-gray-700 hover:scale-105 transition-all">
+                    <div class="text-3xl mb-2">⚛️</div>
+                    <span class="text-white font-semibold text-sm">React</span>
+                </div>
+                <div class="bg-gray-900 rounded-xl p-4 text-center border border-gray-700 hover:scale-105 transition-all">
+                    <div class="text-3xl mb-2">🐍</div>
+                    <span class="text-white font-semibold text-sm">Python</span>
+                </div>
+                <div class="bg-gray-900 rounded-xl p-4 text-center border border-gray-700 hover:scale-105 transition-all">
+                    <div class="text-3xl mb-2">📱</div>
+                    <span class="text-white font-semibold text-sm">Android</span>
+                </div>
+                <div class="bg-gray-900 rounded-xl p-4 text-center border border-gray-700 hover:scale-105 transition-all">
+                    <div class="text-3xl mb-2">🟢</div>
+                    <span class="text-white font-semibold text-sm">Node.js</span>
+                </div>
+                <div class="bg-gray-900 rounded-xl p-4 text-center border border-gray-700 hover:scale-105 transition-all">
+                    <div class="text-3xl mb-2">🎨</div>
+                    <span class="text-white font-semibold text-sm">Tailwind</span>
+                </div>
+                <div class="bg-gray-900 rounded-xl p-4 text-center border border-gray-700 hover:scale-105 transition-all">
+                    <div class="text-3xl mb-2">🗄️</div>
+                    <span class="text-white font-semibold text-sm">MySQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center mb-12">
+            <div class="bg-gray-900 rounded-2xl p-8 border border-gray-700">
+                <h2 class="text-2xl font-bold text-white mb-4">¿Interesado en colaborar?</h2>
+                <p class="text-gray-300 mb-6">
+                    Siempre estoy abierto a nuevos proyectos y oportunidades de colaboración. 
+                    ¡Hablemos sobre tu próxima idea!
+                </p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="/contacto" 
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Contactar
+                    </a>
+                    <a href="https://github.com/italo-huillca" target="_blank" 
+                        class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        Ver GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Home -->
+        <div class="text-center">
+            <a href="/" 
+                class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Volver al Inicio
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
