@@ -1,0 +1,13 @@
+# robots.txt para https://portafolio-render-u90m.onrender.com/
+# Generado por Italo Huillca
+
+# Permitir todos los bots
+User-agent: *
+Allow: /
+
+# Bloquear acceso a archivos sensibles
+Disallow: /admin
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://portafolio-render-u90m.onrender.com/sitemap.xml

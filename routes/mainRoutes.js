@@ -9,4 +9,7 @@ router.get("/proyectos", mainController.proyectos);
 router.get("/contact", mainController.contact);
 router.post("/contact", mainController.contactPost);
 
+// Ruta para el sitemap XML
+router.get("/sitemap.xml", mainController.sitemap);
+
 module.exports = router;
