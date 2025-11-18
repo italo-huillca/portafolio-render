@@ -26,7 +26,7 @@ const mainController = {
     res.render("servicios", { title: "Servicios" });
   },
   sitemap: (req, res) => {
-    // URL base del sitio (cambiar cuando esté en producción)
+    // URL base del sitio
     const BASE_URL = process.env.BASE_URL || "https://portafolio-render-u90m.onrender.com";
     
     // Definir las rutas del sitio con sus prioridades y frecuencia de actualización
@@ -37,19 +37,25 @@ const mainController = {
       { url: "/contact", changefreq: "monthly", priority: "0.7" }
     ];
 
-    // Generar el XML del sitemap
+    // Obtener fecha actual en formato ISO
+    const lastmod = new Date().toISOString().split('T')[0]; // Solo la fecha YYYY-MM-DD
+
+    // Generar el XML del sitemap con formato correcto
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${routes.map(route => `  <url>
     <loc>${BASE_URL}${route.url}</loc>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority}</priority>
-    <lastmod>${new Date().toISOString()}</lastmod>
   </url>`).join('\n')}
 </urlset>`;
 
-    // Establecer el tipo de contenido como XML
-    res.header('Content-Type', 'application/xml');
+    // Establecer headers correctos para XML
+    res.set({
+      'Content-Type': 'application/xml; charset=utf-8',
+      'X-Robots-Tag': 'noindex' // Evita que Google indexe el sitemap mismo
+    });
     res.send(sitemap);
   }
 };
